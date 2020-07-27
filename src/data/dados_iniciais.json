@@ -1,0 +1,164 @@
+{
+  "categorias": [
+    {
+      "titulo": "Netflix Series",
+      "cor": "red",
+      "videos": [
+        {
+          "titulo": "Work hard, but don't exaggerate.",
+          "url": "https://www.youtube.com/watch?v=V-zMylFrojY"
+        },
+        {
+          "titulo": "Dark",
+          "url": "https://www.youtube.com/watch?v=v2FIQRsQR0Y"
+        },
+        {
+          "titulo": "Black Mirror",
+          "url": "https://www.youtube.com/watch?v=wCajjsrxhUs"
+        },
+        {
+          "titulo": "BoJack Horseman",
+          "url": "https://www.youtube.com/watch?v=i1eJMig5Ik4"
+        },
+        {
+          "titulo": "House of Cards",
+          "url": "https://www.youtube.com/watch?v=gBabKoHSErI"
+        },
+        {
+          "titulo": "Peaky Blinders",
+          "url": "https://www.youtube.com/watch?v=Ruyl8_PT_y8"
+        },        
+        {
+          "titulo": "Daredevil",
+          "url": "https://www.youtube.com/watch?v=n83s6NO1NE0"
+        },
+        {
+          "titulo": "Stranger Things",
+          "url": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
+        }
+      ]
+    },
+    {
+      "titulo": "Animes",
+      "cor": "#fcb205",
+      "videos": [
+        {
+          "titulo": "Naruto Shippuden",
+          "url": "https://www.youtube.com/watch?v=tA3yE4_t6SY"
+        },
+        {
+          "titulo": "One Punch Man",
+          "url": "https://www.youtube.com/watch?v=78ngg0SRlEI"
+        },
+        {
+          "titulo": "Death Note",
+          "url": "https://www.youtube.com/watch?v=NlJZ-YgAt-c"
+        },
+        {
+          "titulo": "Anohana",
+          "url": "https://www.youtube.com/watch?v=DONLsQWdQzA"
+        }, 
+        {
+          "titulo": "Castlevania",
+          "url": "https://www.youtube.com/watch?v=Kbb8zPQBmOw"
+        }
+      ]
+    },
+    {
+      "titulo": "Anime Movies",
+      "cor": "#fc0249",
+      "videos": [
+        {
+          "titulo": "Your Name",
+          "url": "https://www.youtube.com/watch?v=nLhKXh6sJtk"
+        },
+        {
+          "titulo": "A Silent Voice",
+          "url": "https://www.youtube.com/watch?v=nfK6UgLra7g"
+        },
+        {
+          "titulo": "Ocean Waves",
+          "url": "https://www.youtube.com/watch?v=tfkHiHjrqa8"
+        },
+        {
+          "titulo": "Meu Amigo Totoro",
+          "url": "https://www.youtube.com/watch?v=92a7Hj0ijLs"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "var(--secondary)",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Inception",
+          "url": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+        },
+        {
+          "titulo": "Pulp Fiction",
+          "url": "https://www.youtube.com/watch?v=tGpTpVyI_OQ"
+        },
+        {
+          "titulo": "Bastardos Inglórios",
+          "url": "https://www.youtube.com/watch?v=KnrRy6kSFF0"
+        }
+      ]
+    },
+    {
+      "titulo": "Músicas",
+      "cor": "var(--frontEnd)",
+      "videos": [
+        {
+          "titulo": "Tyler, The Creator - I Think",
+          "url": "https://www.youtube.com/watch?v=m91Vq-Yd3BA"
+        },
+        {
+          "titulo": "Joji - Gimme Love",
+          "url": "https://www.youtube.com/watch?v=jPan651rVMs"
+        },
+        {
+          "titulo": "Summer Salt - Sweet To Me",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Gus Dapperton - Prune, You Talk Funny",
+          "url": "https://www.youtube.com/watch?v=QrVl7mgVSg0"
+        },
+        {
+          "titulo": "Yellow Days - A Little While",
+          "url": "https://www.youtube.com/watch?v=RRKXQE52l2Q"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "videos": [
+        {
+          "titulo": "Online Tutorials",
+          "url": "https://www.youtube.com/watch?v=y0XHdEeEevs"
+        },
+        {
+          "titulo": "Rocketseat",
+          "url": "https://www.youtube.com/watch?v=XcU9GEUZTQA"
+        },
+        {
+          "titulo": "Felipe Deschamps",
+          "url": "https://www.youtube.com/watch?v=P5kfA6ncOs8"
+        },
+        {
+          "titulo": "DevPleno",
+          "url": "https://www.youtube.com/watch?v=nNpOmiRlM4Y"
+        },
+        {
+          "titulo": "Dev Soutinho",
+          "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU"
+        }
+      ]
+    }
+  ]
+}
