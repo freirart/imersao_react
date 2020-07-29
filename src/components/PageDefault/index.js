@@ -4,12 +4,12 @@ import Footer from '../Footer';
 import styled from 'styled-components';
 
 const Main = styled.main`
-    background: var(--black);
-    color: var(--white);
+    background: #ededed;
+    color: var(--black);
     flex: 1;
     padding-top: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 `;
 
 function PageDefault({children}){

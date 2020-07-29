@@ -1,0 +1,62 @@
+.inputBox{
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.inputBox.w50{
+    width: 47%;
+}
+.inputBox.w100{
+    width: 100%;
+}
+.inputBox input,.inputBox textarea{
+    resize: none;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #070707;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+}
+
+.inputBox input:focus, .inputBox textarea:focus,
+.inputBox input:valid, .inputBox textarea:valid{
+    border-bottom: 3px solid var(--primary);
+}
+.inputBox textarea{
+    min-height: 80px;
+}
+.inputBox span{
+    position: absolute;
+    left: 5px;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #878787;
+    transition: 0.5s;
+    pointer-events: none;
+}
+input[type="color"]{
+    height: 37px;
+    padding: 0;
+    margin-top: -2px;
+}
+.inputBox input:focus ~ span, .inputBox textarea:focus ~ span,
+.inputBox input:valid ~ span, .inputBox textarea:valid ~ span{
+    left: 0;
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: green;
+}
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: #fff !important;
+    background-image: none !important;
+    color: #070707 !important;
+}

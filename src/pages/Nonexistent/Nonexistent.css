@@ -1,0 +1,87 @@
+.error{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    background: linear-gradient(0deg, #fff, #03a9f4);
+    min-height: 100vh;
+}
+.sky{
+    position: relative;
+    widows: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 58vh;
+}
+.sky h2{
+    font-size: 16em;
+    color: #fff;
+    text-shadow: 15px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.sky h2 span{
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+}
+.sky h2 span:nth-child(even){
+    animation-delay: -1s;
+}
+@keyframes animate {
+    0%, 100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+.field{
+    padding: 100px;
+    background: #6e2308;
+    box-shadow: inset 0 20px 10px #51680c;
+    text-align: center;
+}
+.field h2{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.field .btn{
+    background: #fff;
+    color: #000;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.field .btn .btn-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.plane{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    max-width: 300px;
+}
+.grass{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: url(../../assets/imgs/Grass.png);
+    background-position: bottom;
+    animation: animateGrass 0.2s linear infinite;
+}
+@keyframes animateGrass{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -94px 0;
+    }
+}

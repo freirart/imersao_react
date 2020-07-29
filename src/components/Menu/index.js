@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../assets/imgs/logo.png';
 import './Menu.css';
 import { Link } from 'react-router-dom';
-//import ButtonLink from './components/ButtonLink';
 import Button from '../Button';
 
 function Menu(){

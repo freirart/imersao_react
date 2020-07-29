@@ -1,0 +1,58 @@
+.btnBox{
+    display: flex;
+    margin-top: 30px;
+}
+.btn, .btnLimpar{
+    position: relative;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 8px 0 -4px #19b73e,
+                0 -8px 0 -4px #dc0028,
+                -8px 0 0 -4px #1328db,
+                8px 0 0 -4px #ff560b;
+    color:  rgba(255, 255, 255, 1);
+}
+.btnLimpar:hover{
+    box-shadow: 0 8px 0 -4px #1328db,
+                0 -8px 0 -4px #1328db,
+                -8px 0 0 -4px #1328db,
+                8px 0 0 -4px #1328db;
+    color:  rgba(255, 255, 255, 1);
+}
+.inputSection{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+table{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    background: var(--black);
+    color: var(--grayMedium);
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

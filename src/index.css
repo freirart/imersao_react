@@ -6,7 +6,9 @@
 :root {
   --primary: #81f595;
   --secondary: #51ef6b;
+  --secondaryDarker: #33bf4a;
   --black: #242423;
+  --blue: #A8E4EF;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
@@ -33,4 +35,12 @@ a {
   min-height: calc(100vh - var(--bodyPaddingTop));
   display: flex;
   flex-direction: column;
+}
+
+::-webkit-scrollbar { 
+  background-color: #141414; 
+  width: 8px;
+}
+::-webkit-scrollbar-thumb { 
+  background-color: var(--primary); 
 }
