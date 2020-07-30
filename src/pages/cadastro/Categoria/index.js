@@ -7,6 +7,7 @@ import {
   W50, BtnCadastrar, BtnBox, BtnLimpar,
 } from './styles';
 import './Categoria.css';
+import ColorExample from './components/ColorExample';
 
 function CadastroCategoria() {
   const initialValues = {
@@ -36,9 +37,12 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
+    /*
     const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias/'
-      : 'https://freirart.herokuapp.com/categorias';
+      ? 'http://localhost:8080/categorias'
+      : 'https://freirart.herokuapp.com/categorias'; */
+
+    const URL = 'http://localhost:8080/categorias';
 
     fetch(URL).then(async (promise) => {
       const resposta = await promise.json();
@@ -51,7 +55,7 @@ function CadastroCategoria() {
   return (
     <PageDefault>
 
-      <Header header="Cadastro de Categorias" />
+      <Header>Cadastro de Categorias</Header>
 
       <form onSubmit={(e) => {
         e.preventDefault();
@@ -88,15 +92,15 @@ function CadastroCategoria() {
         </BtnBox>
       </form>
 
-      <ul>
+      {/* <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.nome}`}>
             {categoria.nome}
           </li>
         ))}
-      </ul>
+        </ul> */}
 
-      {/* <table>
+      <table>
         <thead>
           <tr>
             <th>Nome</th>
@@ -105,13 +109,28 @@ function CadastroCategoria() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Filmes</td>
-            <td>#fff</td>
-            <td>lalala</td>
-          </tr>
+          {categorias.map(({
+            id, nome, descricao, cor,
+          }) => (
+            <tr key={id}>
+              <td>
+                {nome}
+              </td>
+              <td className="celulaCor">
+                <ColorExample style={{ background: cor }} />
+                {cor}
+              </td>
+              <td>
+                <ul>
+                  {descricao.map((media) => (
+                    <li>{media}</li>
+                  ))}
+                </ul>
+              </td>
+            </tr>
+          ))}
         </tbody>
-      </table> */}
+      </table>
 
     </PageDefault>
   );

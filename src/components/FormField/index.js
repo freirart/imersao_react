@@ -7,11 +7,37 @@ function FormField({
 }) {
   const fieldId = `id_${name}`;
 
+  function handleClick(id) {
+    const $input = document.getElementById(id);
+    if ($input) {
+      $input.addEventListener('focus', () => {
+        $input.placeholder = 'Separe os itens por ENTER';
+      }, false);
+    }
+  }
+
+  function handleBlur(id) {
+    const $input = document.getElementById(id);
+    if ($input) {
+      $input.addEventListener('blur', () => {
+        $input.placeholder = '';
+      }, false);
+    }
+  }
+
   if (type.toLowerCase() === 'textarea') {
     return (
       <div className="inputBox w100">
         <label htmlFor={fieldId}>
-          <textarea name={name} id={fieldId} value={value} onChange={onChange} required />
+          <textarea
+            name={name}
+            id={fieldId}
+            value={value}
+            onChange={onChange}
+            onClick={handleClick(fieldId)}
+            onMouseLeave={handleBlur(fieldId)}
+            required
+          />
           <span>{label}</span>
         </label>
       </div>

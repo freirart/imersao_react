@@ -1,5 +1,5 @@
 table{
-    margin-top: 40px;
+    margin: 40px 0;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
@@ -15,4 +15,13 @@ td, th{
 }
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+td.celulaCor{
+    min-width: 100px;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-inline-start: 0px;
 }

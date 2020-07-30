@@ -29,7 +29,7 @@ export default function BannerMain({
 
           <ContentAreaContainer.Description>
             <p>In life, we go through lots of cycles, and between them, we struggle hard. Whether to get a better job or to learn a new skill, we all work hard for it, forgetting, sometimes, about our healthy and happiness.</p>
-            <p>Here are the some of the things I most like doing:</p>
+            <p>Here are the some of the things I most like watching:</p>
           </ContentAreaContainer.Description>
         </ContentAreaContainer.Item>
 

@@ -42,5 +42,5 @@ a {
   width: 8px;
 }
 ::-webkit-scrollbar-thumb { 
-  background-color: var(--primary); 
+  background-color: var(--frontEnd); 
 }

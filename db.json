@@ -4,33 +4,61 @@
 		{
 			"id": 1,
 			"nome": "Netflix Series",
-			"descricao": "",
+			"descricao": ["Dark",
+				 		 "Black Mirror",
+						 "Bojack Horseman", 
+						 "House of Cards", 
+						 "Peaky Blinders", 
+						 "Daredevil", 
+						 "Stranger Things"],
 			"cor": "red"
 		},
 		{
 			"id": 2,
 			"nome": "Animes",
-			"descricao": "",
+			"descricao": ["Naruto Shippuden",
+						 "One Punch Man", 
+						 "Death Note",
+						 "Anohana",
+						 "Castlevania"],
 			"cor": "#FCB205"
 		},
 		{
+			"id": 3,
 			"nome": "Anime Movies",
-			"descricao": "",
+			"descricao": ["Your Name",
+						 "A Silent Voice",
+						 "Ocean Waves", 
+						 "Meu Amigo Totoro"],
 			"cor": "#FC0249"
 		},
 		{
+			"id": 4,
 			"nome": "Filmes",
-			"descricao": "",
+			"descricao": ["Interstellar",
+				 		  "Inception",
+				  		  "Pulp Fiction",
+				   		  "Bastardos Inglórios"],
 			"cor": "#51EF6B"
 		},
 		{
+			"id": 5,
 			"nome": "Músicas",
-			"descricao": "",
+			"descricao": ["Tyler The Creator - Potato Salad",
+						  "Joji - Gimme Love",
+						  "Summer Salt - Summer Salt",
+						  "Gus Dapperton - Prune, You Talk Funny",
+						  "Yellow Days - A Little While"],
 			"cor": "#6BD1FF"
 		},
 		{
+			"id": 6,
 			"nome": "Aprendendo a aprender tecnologia",
-			"descricao": "",
+			"descricao": ["Online Tutorials",
+						  "Rocketseat",
+						  "Felipe Deschamps",
+						  "Dev Soutinho",
+						  "Alura"],
 			"cor": "#6B5BE5"
 		}
 	]

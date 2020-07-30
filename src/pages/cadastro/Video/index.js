@@ -6,7 +6,7 @@ import Header from '../components/Header';
 function CadastroVideo() {
   return (
     <PageDefault>
-      <Header header="Cadastro de Vídeo" />
+      <Header>Cadastro de Vídeo</Header>
       <Link to="/cadastro/categoria">
         Cadastrar Categoria
       </Link>

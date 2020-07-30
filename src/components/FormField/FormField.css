@@ -1,6 +1,6 @@
 .inputBox{
     position: relative;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 .inputBox.w50{
     width: 47%;
@@ -28,7 +28,7 @@
     border-bottom: 3px solid var(--primary);
 }
 .inputBox textarea{
-    min-height: 80px;
+    min-height: 100px;
 }
 .inputBox span{
     position: absolute;
@@ -59,4 +59,15 @@ input:-internal-autofill-selected {
     background-color: #fff !important;
     background-image: none !important;
     color: #070707 !important;
+}
+@media (max-width: 424px) {
+    .inputBox span{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 326px) {
+    .inputBox span{
+        font-size: 12px;
+    }
 }

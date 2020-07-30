@@ -15,7 +15,7 @@ const Button = styled.button`
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     transition: .3s;
     &:hover,
     &:focus {
