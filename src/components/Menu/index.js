@@ -11,9 +11,10 @@ function Menu() {
         <img className="Logo" src={logo} alt="</freirart> Logo" />
       </Link>
       <Button as={Link} to="/cadastro/video" className="ButtonLink">
-        <i className="fas fa-plus-square" />
+        <span className="symbol">+</span>
         {' '}
-&nbsp; New Video
+        &nbsp;
+        <span className="text">New Video</span>
       </Button>
     </nav>
   );

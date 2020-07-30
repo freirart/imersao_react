@@ -1,0 +1,37 @@
+{
+	"categorias": 
+	[
+		{
+			"id": 1,
+			"nome": "Netflix Series",
+			"descricao": "",
+			"cor": "red"
+		},
+		{
+			"id": 2,
+			"nome": "Animes",
+			"descricao": "",
+			"cor": "#FCB205"
+		},
+		{
+			"nome": "Anime Movies",
+			"descricao": "",
+			"cor": "#FC0249"
+		},
+		{
+			"nome": "Filmes",
+			"descricao": "",
+			"cor": "#51EF6B"
+		},
+		{
+			"nome": "Músicas",
+			"descricao": "",
+			"cor": "#6BD1FF"
+		},
+		{
+			"nome": "Aprendendo a aprender tecnologia",
+			"descricao": "",
+			"cor": "#6B5BE5"
+		}
+	]
+}

@@ -1,8 +1,11 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Header from '../components/Header';
+import {
+  W50, BtnCadastrar, BtnBox, BtnLimpar,
+} from './styles';
 import './Categoria.css';
 
 function CadastroCategoria() {
@@ -32,6 +35,17 @@ function CadastroCategoria() {
     );
   }
 
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categorias/';
+
+    fetch(URL).then(async (promise) => {
+      const resposta = await promise.json();
+      setCategorias([
+        ...resposta,
+      ]);
+    });
+  });
+
   return (
     <PageDefault>
 
@@ -43,7 +57,7 @@ function CadastroCategoria() {
         setValues(initialValues);
       }}
       >
-        <div className="inputSection">
+        <W50>
           <FormField
             label="Nome da Categoria"
             type="Text"
@@ -58,7 +72,7 @@ function CadastroCategoria() {
             value={values.cor}
             onChange={handleChange}
           />
-        </div>
+        </W50>
         <FormField
           label="Descrição"
           type="textarea"
@@ -66,10 +80,10 @@ function CadastroCategoria() {
           value={values.descricao}
           onChange={handleChange}
         />
-        <div className="btnBox">
-          <button type="button" className="btn">Cadastrar</button>
-          <button type="button" className="btnLimpar" onClick={handleBtnClick}>Limpar</button>
-        </div>
+        <BtnBox>
+          <BtnCadastrar>Cadastrar</BtnCadastrar>
+          <BtnLimpar onClick={handleBtnClick}>Limpar</BtnLimpar>
+        </BtnBox>
       </form>
 
       <table>
@@ -88,8 +102,6 @@ function CadastroCategoria() {
           </tr>
         </tbody>
       </table>
-
-      <ul />
 
     </PageDefault>
   );
