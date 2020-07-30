@@ -11,7 +11,7 @@ const Container = styled.ul`
   .slick-next {
     z-index: 50;
     top: 0;
-    bottom: 50px;
+    bottom: 0;
     margin: auto;
     width: 30px;
     height: 30px;

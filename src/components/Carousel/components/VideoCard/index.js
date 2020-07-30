@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { VideoCardContainer, HoverTitle } from './styles';
+import VideoCardContainer from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -21,8 +21,9 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
         style={{ borderColor: categoryColor || 'red' }}
         title={videoTitle}
         className="videocard"
-      />
-      <HoverTitle>{videoTitle}</HoverTitle>
+      >
+        <span>{videoTitle}</span>
+      </VideoCardContainer>
     </>
   );
 }

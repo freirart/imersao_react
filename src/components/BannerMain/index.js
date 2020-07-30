@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
@@ -13,7 +14,6 @@ function getYouTubeId(youtubeURL) {
 
 export default function BannerMain({
   videoTitle,
-  videoDescription,
   url,
 }) {
   const youTubeID = getYouTubeId(url);
@@ -28,7 +28,8 @@ export default function BannerMain({
           </ContentAreaContainer.Title>
 
           <ContentAreaContainer.Description>
-            {videoDescription}
+            <p>In life, we go through lots of cycles, and between them, we struggle hard. Whether to get a better job or to learn a new skill, we all work hard for it, forgetting, sometimes, about our healthy and happiness.</p>
+            <p>Here are the some of the things I most like doing:</p>
           </ContentAreaContainer.Description>
         </ContentAreaContainer.Item>
 
@@ -47,6 +48,5 @@ export default function BannerMain({
 
 BannerMain.propTypes = {
   videoTitle: PropTypes.string.isRequired,
-  videoDescription: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };
