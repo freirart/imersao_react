@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { VideoCardGroupContainer, Title } from './styles';
@@ -46,7 +47,7 @@ Carousel.defaultProps = {
 
 Carousel.propTypes = {
   ignoreFirstVideo: PropTypes.bool,
-  category: PropTypes.string.isRequired,
+  category: PropTypes.object.isRequired,
 };
 
 export default Carousel;

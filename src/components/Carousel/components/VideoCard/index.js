@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { VideoCardContainer } from './styles';
-import './VideoCard.css';
+import { VideoCardContainer, HoverTitle } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -23,7 +22,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
         title={videoTitle}
         className="videocard"
       />
-      <p>{videoTitle}</p>
+      <HoverTitle>{videoTitle}</HoverTitle>
     </>
   );
 }

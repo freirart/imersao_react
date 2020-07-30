@@ -1,9 +1,0 @@
-p{
-    opacity: 0;
-    text-align: center;
-}
-
-.videocard:hover ~ p,
- .videocard:focus ~ p{
-     opacity: 1;
- }

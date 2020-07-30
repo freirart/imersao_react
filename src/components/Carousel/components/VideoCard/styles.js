@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const HoverTitle = styled.p`
-  position: absolute;
-  background: orange;
+  opacity: 0;
+  text-align: center;
 `;
 
 export const VideoCardContainer = styled.a`
@@ -27,6 +27,10 @@ export const VideoCardContainer = styled.a`
     opacity: 100%;
     z-index: 10;
     transform: scale(1.1);
+  }
+  &:hover ~ p,
+  &:focus ~ p{
+    opacity: 1;
   }
   
   &:not(:first-child) {
