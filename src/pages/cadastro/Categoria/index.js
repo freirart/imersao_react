@@ -46,7 +46,7 @@ function CadastroCategoria() {
         ...resposta,
       ]);
     });
-  });
+  }, []);
 
   return (
     <PageDefault>
@@ -88,7 +88,15 @@ function CadastroCategoria() {
         </BtnBox>
       </form>
 
-      <table>
+      <ul>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
+            {categoria.nome}
+          </li>
+        ))}
+      </ul>
+
+      {/* <table>
         <thead>
           <tr>
             <th>Nome</th>
@@ -103,7 +111,7 @@ function CadastroCategoria() {
             <td>lalala</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
 
     </PageDefault>
   );
