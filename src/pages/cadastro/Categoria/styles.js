@@ -14,7 +14,7 @@ export const BtnBox = styled.div`
 
 export const BtnCadastrar = styled.button`
     position: relative;
-    width: 130px;
+    width: 80px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ export const BtnCadastrar = styled.button`
 
 export const BtnLimpar = styled.button`
     position: relative;
-    width: 130px;
+    width: 80px;
     height: 50px;
     display: flex;
     justify-content: center;
