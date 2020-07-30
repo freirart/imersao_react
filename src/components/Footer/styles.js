@@ -25,4 +25,6 @@ const LogoFooter = styled.img`
   max-width: 168px;
 `;
 
-export {FooterBase, Author, Origin, LogoFooter};
+export {
+  FooterBase, Author, Origin, LogoFooter,
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { VideoCardGroupContainer, Title } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
@@ -9,7 +10,7 @@ function Carousel({
 }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
-  const videos = category.videos;
+  const { videos } = category;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -39,5 +40,13 @@ function Carousel({
     </VideoCardGroupContainer>
   );
 }
+Carousel.defaultProps = {
+  ignoreFirstVideo: false,
+};
+
+Carousel.propTypes = {
+  ignoreFirstVideo: PropTypes.bool,
+  category: PropTypes.string.isRequired,
+};
 
 export default Carousel;

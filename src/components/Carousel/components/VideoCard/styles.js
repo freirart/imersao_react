@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
+export const HoverTitle = styled.p`
+  position: absolute;
+  background: orange;
+`;
+
 export const VideoCardContainer = styled.a`
   text-decoration: none;
-  overflow: hidden;
+  overflow: visible;
   cursor: pointer;
   color: white;
   flex: 0 0 298px;

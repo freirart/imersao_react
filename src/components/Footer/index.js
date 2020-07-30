@@ -1,6 +1,8 @@
 import React from 'react';
-import { FooterBase, Author, Origin, LogoFooter } from './styles';
 import { Link } from 'react-router-dom';
+import {
+  FooterBase, Author, Origin, LogoFooter,
+} from './styles';
 import logo from '../../assets/imgs/logo.png';
 
 function Footer() {
@@ -10,11 +12,14 @@ function Footer() {
         <LogoFooter src={logo} alt="Logo" />
       </Link>
       <p>
-        Desenvolvido por {' '}
+        Desenvolvido por
+        {' '}
         <Author href="https://wwww.linkedin.com/in/freirart">
           Artur Freire
-        </Author> {' '}
-        durante a {' '}
+        </Author>
+        {' '}
+        durante a
+        {' '}
         <Origin href="https://www.alura.com.br/">
           Imersão React da Alura.
         </Origin>

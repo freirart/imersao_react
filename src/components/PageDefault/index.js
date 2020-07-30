@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Menu from '../Menu';
 import Footer from '../Footer';
-import styled from 'styled-components';
 
 const Main = styled.main`
     background: #ededed;
@@ -12,16 +13,24 @@ const Main = styled.main`
     padding-right: 10%;
 `;
 
-function PageDefault({children}){
-	return(
-		<>
-			<Menu />
-				<Main>
-					{children}
-				</Main>
-			<Footer />
-		</>
-	);
+function PageDefault({ children }) {
+  return (
+    <>
+      <Menu />
+      <Main>
+        {children}
+      </Main>
+      <Footer />
+    </>
+  );
 }
+
+PageDefault.defaultProps = {
+  children: (<div />),
+};
+
+PageDefault.propTypes = {
+  children: PropTypes.node,
+};
 
 export default PageDefault;
