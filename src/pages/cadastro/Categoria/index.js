@@ -108,7 +108,7 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-        <div>Loading...</div>
+        <div style={{ margin: '20px' }}>Loading...</div>
       )}
 
       <table>
