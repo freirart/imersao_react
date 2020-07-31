@@ -39,7 +39,7 @@ function CadastroCategoria() {
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
-      : 'https://freirart.herokuapp.com/categorias'; 
+      : 'https://freirart.herokuapp.com/categorias';
 
     fetch(URL).then(async (promise) => {
       const resposta = await promise.json();
@@ -48,6 +48,24 @@ function CadastroCategoria() {
       ]);
     });
   }, []);
+
+  function isAnObject(description) {
+    // eslint-disable-next-line valid-typeof
+    return typeof description === 'object';
+  }
+
+  function listDescription(description) {
+    if (isAnObject(description)) {
+      console.log('É um objeto.');
+      return (description.map((media) => (
+        <li key={`${media}`}>
+          {media}
+        </li>
+      )));
+    }
+    console.log('Não é um objeto.');
+    return (<li>{description}</li>);
+  }
 
   return (
     <PageDefault>
@@ -89,13 +107,9 @@ function CadastroCategoria() {
         </BtnBox>
       </form>
 
-      {/* <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
-          </li>
-        ))}
-        </ul> */}
+      {categorias.length === 0 && (
+        <div>Loading...</div>
+      )}
 
       <table>
         <thead>
@@ -119,9 +133,7 @@ function CadastroCategoria() {
               </td>
               <td>
                 <ul>
-                  {descricao.map((media) => (
-                    <li>{media}</li>
-                  ))}
+                  {listDescription(descricao)}
                 </ul>
               </td>
             </tr>
