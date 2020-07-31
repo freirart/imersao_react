@@ -8,6 +8,8 @@ import {
 } from './styles';
 import './Categoria.css';
 import ColorExample from './components/ColorExample';
+import BtnUpDel from '../components/BtnUpDel';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const initialValues = {
@@ -15,26 +17,10 @@ function CadastroCategoria() {
     descricao: '',
     cor: '#242423',
   };
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(initialValues);
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleBtnClick() {
-    setValues(initialValues);
-  }
-
-  function handleChange(e) {
-    setValue(
-      e.target.getAttribute('name'),
-      e.target.value,
-    );
-  }
+  const { values, clearForm, handleChange } = useForm(initialValues);
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -49,22 +35,21 @@ function CadastroCategoria() {
     });
   }, []);
 
+  function listDescriptionAsList(description) {
+    return (description.map((media) => (
+      <li key={`${media}`}>
+        {media}
+      </li>
+    )));
+  }
+
   function isAnObject(description) {
-    // eslint-disable-next-line valid-typeof
     return typeof description === 'object';
   }
 
   function listDescription(description) {
-    if (isAnObject(description)) {
-      console.log('É um objeto.');
-      return (description.map((media) => (
-        <li key={`${media}`}>
-          {media}
-        </li>
-      )));
-    }
-    console.log('Não é um objeto.');
-    return (<li>{description}</li>);
+    if (isAnObject(description)) return listDescriptionAsList(description);
+    return description;
   }
 
   return (
@@ -75,7 +60,7 @@ function CadastroCategoria() {
       <form onSubmit={(e) => {
         e.preventDefault();
         setCategorias([...categorias, values]);
-        setValues(initialValues);
+        clearForm(initialValues);
       }}
       >
         <W50>
@@ -103,7 +88,7 @@ function CadastroCategoria() {
         />
         <BtnBox>
           <BtnCadastrar>Cadastrar</BtnCadastrar>
-          <BtnLimpar onClick={handleBtnClick}>Limpar</BtnLimpar>
+          <BtnLimpar onClick={clearForm}>Limpar</BtnLimpar>
         </BtnBox>
       </form>
 
@@ -117,6 +102,8 @@ function CadastroCategoria() {
             <th>Nome</th>
             <th>Cor</th>
             <th>Descrição</th>
+            <th>Editar</th>
+            <th>Excluir</th>
           </tr>
         </thead>
         <tbody>
@@ -135,6 +122,12 @@ function CadastroCategoria() {
                 <ul>
                   {listDescription(descricao)}
                 </ul>
+              </td>
+              <td className="btnUD">
+                <BtnUpDel style={{ background: 'blue' }}><i className="fas fa-edit" /></BtnUpDel>
+              </td>
+              <td className="btnUD">
+                <BtnUpDel style={{ background: 'red', paddingRight: '12px', paddingLeft: '12px' }}><i className="fas fa-trash-alt" /></BtnUpDel>
               </td>
             </tr>
           ))}
