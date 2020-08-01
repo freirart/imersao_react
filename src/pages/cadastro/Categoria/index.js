@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Header from '../components/Header';
-import {
-  W50, BtnCadastrar, BtnBox, BtnLimpar,
-} from './styles';
+import W50 from '../components/W50';
+import BtnCadastrar from '../components/BtnCadastrar';
+import BtnLimpar from '../components/BtnLimpar';
+import BtnBox from '../components/BtnBox';
 import './Categoria.css';
 import ColorExample from './components/ColorExample';
 import BtnUpDel from '../components/BtnUpDel';
@@ -21,19 +22,6 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   const { values, clearForm, handleChange } = useForm(initialValues);
-
-  useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://freirart.herokuapp.com/categorias';
-
-    fetch(URL).then(async (promise) => {
-      const resposta = await promise.json();
-      setCategorias([
-        ...resposta,
-      ]);
-    });
-  }, []);
 
   function listDescriptionAsList(description) {
     return (description.map((media) => (

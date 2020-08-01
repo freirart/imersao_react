@@ -37,6 +37,9 @@ const VideoCardContainer = styled.a`
     background-color: rgba(0,0,0,0.6);
     padding: 20px;
     font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
     display: none;
     color: var(--grayLight);
   }
