@@ -1,252 +1,273 @@
 {
-	"categorias": [
-		{
-			"id": 1,
-			"nome": "Netflix Series",
-			"descricao": ["Dark",
-				 		 "Black Mirror",
-						 "Bojack Horseman", 
-						 "House of Cards", 
-						 "Peaky Blinders", 
-						 "Daredevil", 
-						 "Stranger Things"],
-			"cor": "red"
-		},
-		{
-			"id": 2,
-			"nome": "Animes",
-			"descricao": ["Naruto Shippuden",
-						 "One Punch Man", 
-						 "Death Note",
-						 "Anohana",
-						 "Castlevania"],
-			"cor": "#FCB205"
-		},
-		{
-			"id": 3,
-			"nome": "Anime Movies",
-			"descricao": ["Your Name",
-						 "A Silent Voice",
-						 "Ocean Waves", 
-						 "Meu Amigo Totoro"],
-			"cor": "#FC0249"
-		},
-		{
-			"id": 4,
-			"nome": "Filmes",
-			"descricao": ["Interstellar",
-				 		  "Inception",
-				  		  "Pulp Fiction",
-				   		  "Bastardos Inglórios"],
-			"cor": "#51EF6B"
-		},
-		{
-			"id": 5,
-			"nome": "Músicas",
-			"descricao": ["Tyler The Creator - Potato Salad",
-						  "Joji - Gimme Love",
-						  "Summer Salt - Summer Salt",
-						  "Gus Dapperton - Prune, You Talk Funny",
-						  "Yellow Days - A Little While"],
-			"cor": "#6BD1FF"
-		},
-		{
-			"id": 6,
-			"nome": "Aprendendo a aprender tecnologia",
-			"descricao": ["Online Tutorials",
-						  "Rocketseat",
-						  "Felipe Deschamps",
-						  "Dev Soutinho",
-						  "Alura"],
-			"cor": "#6B5BE5"
-		}
-	],
-	"videos": [
-		{
-			"id": 1,
-			"categoriaId": 1,
-			"titulo": "Work hard, but don't exaggerate.",
-			"url": "https://www.youtube.com/watch?v=V-zMylFrojY"
-		},
-		{
-		  "id": 2,
-		  "categoriaId": 1,
-		  "titulo": "Dark",
-		  "url": "https://www.youtube.com/watch?v=v2FIQRsQR0Y"
-		},
-		{
-			"id": 3,
-			"categoriaId": 1,
-			"titulo": "Black Mirror",
-			"url": "https://www.youtube.com/watch?v=wCajjsrxhUs"
-		},
-		{
-			"id": 4,
-			"categoriaId": 1,
-			"titulo": "Bojack Horseman",
-			"url": "https://www.youtube.com/watch?v=i1eJMig5Ik4"
-		},
-		{
-			"id": 5,
-			"categoriaId": 1,
-			"titulo": "House of Cards",
-			"url": "https://www.youtube.com/watch?v=gBabKoHSErI"
-		},
-		{
-			"id": 6,
-			"categoriaId": 1,
-			"titulo": "Peaky Blinders",
-			"url": "https://www.youtube.com/watch?v=Ruyl8_PT_y8"
-		},
-		{
-			"id": 7,
-			"categoriaId": 1,
-			"titulo": "Daredevil",
-			"url": "https://www.youtube.com/watch?v=n83s6NO1NE0"
-		},
-		{
-			"id": 8,
-			"categoriaId": 1,
-			"titulo": "Stranger Things",
-			"url": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
-		},
-		{
-			"id": 9,
-			"categoriaId": 2,
-			"titulo": "Naruto Shippuden",
-			"url": "https://www.youtube.com/watch?v=tA3yE4_t6SY"
-		},
-		{
-			"id": 10,
-			"categoriaId": 2,
-			"titulo": "One Punch Man",
-			"url": "https://www.youtube.com/watch?v=78ngg0SRlEI"
-		},
-		{
-			"id": 11,
-			"categoriaId": 2,
-			"titulo": "Death Note",
-			"url": "https://www.youtube.com/watch?v=NlJZ-YgAt-c"
-		},
-		{
-			"id": 12,
-			"categoriaId": 2,
-			"titulo": "Anohana",
-			"url": "https://www.youtube.com/watch?v=DONLsQWdQzA"
-		},
-		{
-			"id": 13,
-			"categoriaId": 2,
-			"titulo": "Castlevania",
-			"url": "https://www.youtube.com/watch?v=Kbb8zPQBmOw"
-		},
-		{
-			"id": 14,
-			"categoriaId": 3,
-			"titulo": "Your Name",
-			"url": "https://www.youtube.com/watch?v=nLhKXh6sJtk"
-		},
-		{
-			"id": 15,
-			"categoriaId": 3,
-			"titulo": "A Silent Voice",
-			"url": "https://www.youtube.com/watch?v=nfK6UgLra7g"
-		},
-		{
-			"id": 16,
-			"categoriaId": 3,
-			"titulo": "Ocean Waves",
-			"url": "https://www.youtube.com/watch?v=tfkHiHjrqa8"
-		},
-		{
-			"id": 17,
-			"categoriaId": 3,
-			"titulo": "Meu Amigo Totoro",
-			"url": "https://www.youtube.com/watch?v=92a7Hj0ijLs"
-		},
-		{
-			"id": 18,
-			"categoriaId": 4,
-			"titulo": "Interstellar",
-			"url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-		},
-		{
-			"id": 19,
-			"categoriaId": 4,
-			"titulo": "Inception",
-			"url": "https://www.youtube.com/watch?v=YoHD9XEInc0"
-		},
-		{
-			"id": 20,
-			"categoriaId": 4,
-			"titulo": "Pulp Fiction",
-			"url": "https://www.youtube.com/watch?v=tGpTpVyI_OQ"
-		},
-		{
-			"id": 21,
-			"categoriaId": 4,
-			"titulo": "Bastardos Inglórios",
-			"url": "https://www.youtube.com/watch?v=KnrRy6kSFF0"
-		},
-		{
-			"id": 22,
-			"categoriaId": 5,
-			"titulo": "Tyler, The Creator - Potato Salad",
-			"url": "https://www.youtube.com/watch?v=iu7wJwbLkpo&list=OLAK5uy_lUORTRY6I_9YPFWtIDk4LzD5weT6t9z10&index=7&t=0s"
-		},
-		{
-			"id": 23,
-			"categoriaId": 5,
-			"titulo": "Joji - Gimme Love",
-			"url": "https://www.youtube.com/watch?v=jPan651rVMs"
-		},
-		{
-			"id": 24,
-			"categoriaId": 5,
-			"titulo": "Summer Salt - Summer Salt",
-			"url": "https://www.youtube.com/watch?v=jAj-GNkhnYk&list=OLAK5uy_kFDKD82mGlX2NiVUGYaPzZS-WAZ_6pogg&index=11&t=0s"
-		},
-		{
-			"id": 25,
-			"categoriaId": 5,
-			"titulo": "Gus Dapperton - Prune, You Talk Funny",
-			"url": "https://www.youtube.com/watch?v=QrVl7mgVSg0"
-		},
-		{
-			"id": 26,
-			"categoriaId": 5,
-			"titulo": "Yellow Days - A Little While",
-			"url": "https://www.youtube.com/watch?v=RRKXQE52l2Q"
-		},
-		{
-			"id": 27,
-			"categoriaId": 6,
-			"titulo": "Online Tutorials",
-			"url": "https://www.youtube.com/watch?v=y0XHdEeEevs"
-		},
-		{
-			"id": 28,
-			"categoriaId": 6,
-			"titulo": "Rocketseat",
-			"url": "https://www.youtube.com/watch?v=XcU9GEUZTQA"
-		},
-		{
-			"id": 29,
-			"categoriaId": 6,
-			"titulo": "Felipe Deschamps",
-			"url": "https://www.youtube.com/watch?v=P5kfA6ncOs8"
-		},
-		{
-			"id": 30,
-			"categoriaId": 6,
-			"titulo": "Dev Soutinho",
-			"url": "https://www.youtube.com/watch?v=-nYNd6EuZHU"
-		},
-		{
-			"id": 31,
-			"categoriaId": 6,
-			"titulo": "Alura",
-			"url": "https://www.youtube.com/watch?v=frsYDnKnwPc"
-		}
-	]
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Netflix Series",
+      "descricao": [
+        "Dark",
+        "Black Mirror",
+        "Bojack Horseman",
+        "House of Cards",
+        "Peaky Blinders",
+        "Daredevil",
+        "Stranger Things"
+      ],
+      "cor": "red"
+    },
+    {
+      "id": 2,
+      "nome": "Animes",
+      "descricao": [
+        "Naruto Shippuden",
+        "One Punch Man",
+        "Death Note",
+        "Anohana",
+        "Castlevania"
+      ],
+      "cor": "#FCB205"
+    },
+    {
+      "id": 3,
+      "nome": "Anime Movies",
+      "descricao": [
+        "Your Name",
+        "A Silent Voice",
+        "Ocean Waves",
+        "Meu Amigo Totoro"
+      ],
+      "cor": "#FC0249"
+    },
+    {
+      "id": 4,
+      "nome": "Filmes",
+      "descricao": [
+        "Interstellar",
+        "Inception",
+        "Pulp Fiction",
+        "Bastardos Inglórios"
+      ],
+      "cor": "#51EF6B"
+    },
+    {
+      "id": 5,
+      "nome": "Músicas",
+      "descricao": [
+        "Tyler The Creator - Potato Salad",
+        "Joji - Gimme Love",
+        "Summer Salt - Summer Salt",
+        "Gus Dapperton - Prune, You Talk Funny",
+        "Yellow Days - A Little While"
+      ],
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 6,
+      "nome": "Aprendendo a aprender tecnologia",
+      "descricao": [
+        "Online Tutorials",
+        "Rocketseat",
+        "Felipe Deschamps",
+        "Dev Soutinho",
+        "Alura"
+      ],
+      "cor": "#6B5BE5"
+    },
+    {
+      "nome": "Olá!",
+      "descricao": [
+        "Isto é um teste da cor #ffffff.",
+        "Será que ele imprime em lista também?"
+      ],
+      "cor": "#ffffff",
+      "id": 7
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Work hard, but don't exaggerate.",
+      "url": "https://www.youtube.com/watch?v=V-zMylFrojY"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Dark",
+      "url": "https://www.youtube.com/watch?v=v2FIQRsQR0Y"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Black Mirror",
+      "url": "https://www.youtube.com/watch?v=wCajjsrxhUs"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Bojack Horseman",
+      "url": "https://www.youtube.com/watch?v=i1eJMig5Ik4"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "House of Cards",
+      "url": "https://www.youtube.com/watch?v=gBabKoHSErI"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Peaky Blinders",
+      "url": "https://www.youtube.com/watch?v=Ruyl8_PT_y8"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Daredevil",
+      "url": "https://www.youtube.com/watch?v=n83s6NO1NE0"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Stranger Things",
+      "url": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Naruto Shippuden",
+      "url": "https://www.youtube.com/watch?v=tA3yE4_t6SY"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "One Punch Man",
+      "url": "https://www.youtube.com/watch?v=78ngg0SRlEI"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Death Note",
+      "url": "https://www.youtube.com/watch?v=NlJZ-YgAt-c"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Anohana",
+      "url": "https://www.youtube.com/watch?v=DONLsQWdQzA"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Castlevania",
+      "url": "https://www.youtube.com/watch?v=Kbb8zPQBmOw"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Your Name",
+      "url": "https://www.youtube.com/watch?v=nLhKXh6sJtk"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "A Silent Voice",
+      "url": "https://www.youtube.com/watch?v=nfK6UgLra7g"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Ocean Waves",
+      "url": "https://www.youtube.com/watch?v=tfkHiHjrqa8"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Meu Amigo Totoro",
+      "url": "https://www.youtube.com/watch?v=92a7Hj0ijLs"
+    },
+    {
+      "id": 18,
+      "categoriaId": 4,
+      "titulo": "Interstellar",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "id": 19,
+      "categoriaId": 4,
+      "titulo": "Inception",
+      "url": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "Pulp Fiction",
+      "url": "https://www.youtube.com/watch?v=tGpTpVyI_OQ"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "Bastardos Inglórios",
+      "url": "https://www.youtube.com/watch?v=KnrRy6kSFF0"
+    },
+    {
+      "id": 22,
+      "categoriaId": 5,
+      "titulo": "Tyler, The Creator - Potato Salad",
+      "url": "https://www.youtube.com/watch?v=iu7wJwbLkpo&list=OLAK5uy_lUORTRY6I_9YPFWtIDk4LzD5weT6t9z10&index=7&t=0s"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "Joji - Gimme Love",
+      "url": "https://www.youtube.com/watch?v=jPan651rVMs"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "Summer Salt - Summer Salt",
+      "url": "https://www.youtube.com/watch?v=jAj-GNkhnYk&list=OLAK5uy_kFDKD82mGlX2NiVUGYaPzZS-WAZ_6pogg&index=11&t=0s"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "Gus Dapperton - Prune, You Talk Funny",
+      "url": "https://www.youtube.com/watch?v=QrVl7mgVSg0"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "Yellow Days - A Little While",
+      "url": "https://www.youtube.com/watch?v=RRKXQE52l2Q"
+    },
+    {
+      "id": 27,
+      "categoriaId": 6,
+      "titulo": "Online Tutorials",
+      "url": "https://www.youtube.com/watch?v=y0XHdEeEevs"
+    },
+    {
+      "id": 28,
+      "categoriaId": 6,
+      "titulo": "Rocketseat",
+      "url": "https://www.youtube.com/watch?v=XcU9GEUZTQA"
+    },
+    {
+      "id": 29,
+      "categoriaId": 6,
+      "titulo": "Felipe Deschamps",
+      "url": "https://www.youtube.com/watch?v=P5kfA6ncOs8"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "titulo": "Dev Soutinho",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "titulo": "Alura",
+      "url": "https://www.youtube.com/watch?v=frsYDnKnwPc"
+    }
+  ]
 }

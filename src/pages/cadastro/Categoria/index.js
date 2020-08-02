@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactLoading from 'react-loading';
+import { useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Header from '../components/Header';
@@ -12,8 +13,11 @@ import './Categoria.css';
 import ColorExample from './components/ColorExample';
 import BtnUpDel from '../components/BtnUpDel';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
+  const history = useHistory();
+
   const initialValues = {
     nome: '',
     descricao: '',
@@ -23,6 +27,16 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   const { values, clearForm, handleChange } = useForm(initialValues);
+
+  useEffect(() => {
+    categoriasRepository.getAll()
+      .then((categories) => {
+        setCategorias(categories);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   function listDescriptionAsList(description) {
     return (description.map((media) => (
@@ -48,7 +62,15 @@ function CadastroCategoria() {
 
       <form onSubmit={(e) => {
         e.preventDefault();
-        setCategorias([...categorias, values]);
+        // setCategorias([...categorias, values]);
+        categoriasRepository.create({
+          nome: values.nome,
+          descricao: values.descricao.split('\n'),
+          cor: values.cor,
+        })
+          .then(() => {
+            history.push('/cadastro/categoria');
+          });
         clearForm(initialValues);
       }}
       >
