@@ -24,8 +24,8 @@ function Home() {
       <PageDefault backG="#070707" paddingAll="0">
 
         {dadosIniciais.length === 0 && (
-        <div align="center">
-          <ReactLoading type="spinningBubbles" color="#242423" />
+        <div align="center" style={{ paddingAll: '5% 0' }}>
+          <ReactLoading type="spinningBubbles" color="#fff" />
         </div>
         )}
 
