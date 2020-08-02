@@ -30,11 +30,11 @@ export default function BannerMain({
           <ContentAreaContainer.Description>
             In life, we go through lots of cycles. And between them, we are constantly struggling.
           </ContentAreaContainer.Description>
-          
+
           <ContentAreaContainer.Description>
             Whether to get a better job or to learn a new skill, we all work hard for it, forgetting, sometimes, about our healthy and happiness.
           </ContentAreaContainer.Description>
-          
+
           <ContentAreaContainer.Description>
             So here are some of the things I most like watching:
           </ContentAreaContainer.Description>

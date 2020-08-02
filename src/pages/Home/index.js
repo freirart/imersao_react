@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactLoading from 'react-loading';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import categoriasRepository from '../../repositories/categorias';
@@ -22,7 +23,11 @@ function Home() {
     <>
       <PageDefault backG="#070707" paddingAll="0">
 
-        {console.log(dadosIniciais)}
+        {dadosIniciais.length === 0 && (
+        <div align="center">
+          <ReactLoading type="spinningBubbles" color="#242423" />
+        </div>
+        )}
 
         {dadosIniciais.map((categoria, indice) => {
           if (indice === 0) {
@@ -47,27 +52,6 @@ function Home() {
           );
         })}
 
-        {/*
-
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[5]}
-      /> */}
       </PageDefault>
     </>
   );

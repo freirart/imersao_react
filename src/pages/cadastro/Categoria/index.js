@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 import React, { useState } from 'react';
+import ReactLoading from 'react-loading';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Header from '../components/Header';
@@ -41,7 +42,7 @@ function CadastroCategoria() {
   }
 
   return (
-    <PageDefault>
+    <PageDefault paddingAll="5% 10%">
 
       <Header>Cadastro de Categorias</Header>
 
@@ -81,9 +82,12 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-        <div style={{ margin: '20px' }}>Loading...</div>
+        <div align="center">
+          <ReactLoading type="spinningBubbles" color="#242423" />
+        </div>
       )}
 
+      { categorias.length >= 1 && (
       <table>
         <thead>
           <tr>
@@ -121,6 +125,7 @@ function CadastroCategoria() {
           ))}
         </tbody>
       </table>
+      )}
 
     </PageDefault>
   );
