@@ -38,6 +38,10 @@ function CadastroCategoria() {
       });
   }, []);
 
+  function handleDelete(btn) {
+    btn.target.closest('tr').remove();
+  }
+
   function listDescriptionAsList(description) {
     return (description.map((media) => (
       <li key={`${media}`}>
@@ -138,10 +142,17 @@ function CadastroCategoria() {
                 </ul>
               </td>
               <td className="btnUD">
-                <BtnUpDel style={{ background: 'blue' }}><i className="fas fa-edit" /></BtnUpDel>
+                <BtnUpDel style={{ background: 'blue' }}>
+                  <i className="fas fa-edit" />
+                </BtnUpDel>
               </td>
               <td className="btnUD">
-                <BtnUpDel style={{ background: 'red', paddingRight: '12px', paddingLeft: '12px' }}><i className="fas fa-trash-alt" /></BtnUpDel>
+                <BtnUpDel
+                  style={{ background: 'red', paddingRight: '12px', paddingLeft: '12px' }}
+                  onClick={handleDelete}
+                >
+                  <i className="fas fa-trash-alt" />
+                </BtnUpDel>
               </td>
             </tr>
           ))}
